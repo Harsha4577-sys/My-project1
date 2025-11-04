@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart City Management App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body bgcolor="blue">
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>🏙️ Smart City Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#issues">Report Issue</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#admin">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="container">
+        <h2>City Overview</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Population</h3>
+                <p>1.2 Million</p>
+            </div>
+            <div class="card">
+                <h3>Area</h3>
+                <p>350 sq.km</p>
+            </div>
+            <div class="card">
+                <h3>Active Services</h3>
+                <p>245</p>
+            </div>
+            <div class="card">
+                <h3>Pending Issues</h3>
+                <p>23</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2>Public Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>🏥 City Hospital</h3>
+                <p>24/7 Emergency and general care.</p>
+                <p><b>Contact:</b> 011-2345678</p>
+            </div>
+            <div class="service">
+                <h3>🚒 Fire Station 3</h3>
+                <p>Emergency fire response for North Zone.</p>
+                <p><b>Contact:</b> 011-7896543</p>
+            </div>
+            <div class="service">
+                <h3>🏫 Central High School</h3>
+                <p>Public school offering K-12 education.</p>
+                <p><b>Contact:</b> 011-4455667</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Issue -->
+    <section id="issues" class="container">
+        <h2>Report a Public Issue</h2>
+        <form class="issue-form">
+            <label for="service">Related Service</label>
+            <input type="text" id="service" placeholder="e.g., Streetlight, Water supply">
+
+            <label for="description">Description</label>
+            <textarea id="description" rows="4" placeholder="Describe the issue..."></textarea>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="e.g., 5th Avenue, Downtown">
+
+            <button type="submit">Submit Issue</button>
+        </form>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="container">
+        <h2>Feedback on Amenities</h2>
+        <form class="feedback-form">
+            <label for="amenity">Amenity Name</label>
+            <input type="text" id="amenity" placeholder="e.g., City Park">
+
+            <label for="rating">Rating (1–5)</label>
+            <input type="number" id="rating" min="1" max="5">
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="3" placeholder="Share your thoughts..."></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Admin Panel -->
+    <section id="admin" class="container admin-panel">
+        <h2>Admin Panel</h2>
+        <div class="admin-cards">
+            <div class="card">
+                <h3>Manage City Info</h3>
+                <p>Update city details like population, area, and description.</p>
+                <button>Update</button>
+            </div>
+            <div class="card">
+                <h3>Monitor Issues</h3>
+                <p>View and resolve user-submitted issues.</p>
+                <button>View Issues</button>
+            </div>
+            <div class="card">
+                <h3>Manage Services</h3>
+                <p>Add or update hospitals, schools, and other public services.</p>
+                <button>Manage</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Smart City Management | Designed by ChatGPT</p>
+    </footer>
+</body>
+</html>

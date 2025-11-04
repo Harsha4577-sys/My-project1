@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+     <h1>CSS:External vs Internal vs Inline</h1>
+
+     <p>open DevTools and inspect each box to see where the styles come from. </p>
+
+        <h2>External CSS</h2>
+        <div style="background-color: rgb(149, 98, 32);">Styled by <b>External</b>CSS from styles,css. </div>
+         <h2>Internal CSS</h2>
+         <p style="background-color: blanchedalmond;">styled by <b>internal</b>css in the &lt;style&lt; tag of this page</p>
+        <h3>Inline CSS</h3>
+        <p style="background-color: rgb(77, 135, 77);"> Styled by <b>inline </b> CSS via the style=""attribute on this element</p>
+        <h2>Inline CSS</h2>
+        
+         <h1> Specificity Showdown(Who wins?)</h1>
+         <p>The same elements is targeted by external,Internal,and inline rules:</p>
+         <li>
+            <ul>
+                External sets it to <b>blue</b>
+            </ul>
+            <ul>Internal tries to make it <b>green</b></ul>
+            <ul>Inline forces it to <b>red</b></ul>
+         </li>
+</body>
+</html>

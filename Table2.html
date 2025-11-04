@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.no & Weekdays Table</title>
+</head>
+<body>
+     <p> This table lists weekdays with serial numbers.</p>
+     <!--Table-->
+     <table border="2">
+        <caption>Tab1:Weekdays</caption>
+        <!--COLGROUP-->
+        <colgroup>
+        <col><!--S.No coloumn</colgroup-->
+        <col><!--Weekdays coloumn-->
+        </colgroup>
+        <!--THEAD contains coloumns headers-->
+        <thead>
+            <tr>
+                <!--scope='col'says this TH labels its column-->
+
+                <th scope="col">S.No</th>
+                <th scope="col">weekdays</th>
+            </tr>
+        </thead>
+
+        <!--TBODY holds main data rows-->
+        <tbody>
+            <!--scope="row" says this TH labels the row(row header )-->
+            <tr><th scope="row">1</th><td>Monday</td></tr>
+            <tr><th scope="row">2</th><td>Tuesday</td></tr>
+            <tr><th scope="row">3</th><td>Wednesday</td></tr>
+            <tr><th scope="row">4</th><td>Thursday</td></tr>
+            <tr><th scope="row">5</th><td>Friday</td></tr>
+            <tr><th scope="row">6</th><td>Saturday</td></tr>
+            <tr><th scope="row">7</th><td>Sunday</td></tr>
+        </tbody>
+                
+
+
+          <!-- TFOOT is great for totals/summaries -->
+        <tfoot>
+        <tr>
+            <!-- colspan merges the two cells for a centered summary -->
+            <td colspan="2">Total days listed: 7</td>
+        </tr>
+        </tfoot>
+
+        
+     </table>
+
+</body>
+</html>
